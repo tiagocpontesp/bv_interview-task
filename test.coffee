@@ -28,7 +28,7 @@ describe 'interview task', ->
 		it 'should list all events for a given sport, obeying list order as per the "pos" field', (done)->
 			request.get("#{ base_url }/sports/1").end (res)->
 				assert.equal res.ok, true, 'resp status NOK'
-				assert.deepEqual res.body, [{"id":81,"title":"event 1A"},{"id":82,"title":"event 1B"}], 'resp body NOK'
+				assert.deepEqual res.body, [{"id":82,"title":"event 1B"}, {"id":81,"title":"event 1A"}], 'resp body NOK'
 				done()
 
 	describe '/sports/<id>/events/<id>', ->
