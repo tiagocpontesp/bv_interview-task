@@ -1,0 +1,42 @@
+{
+	"sports": [
+		{
+			"id": 2,
+			"pos": 2,
+			"title": "sport B",
+			"events": [
+				{
+					"id": 91,
+					"pos": 2,
+					"title": "event 2A",
+					"outcomes": [1,2,3]
+				},
+				{
+					"id": 92,
+					"pos": 1,
+					"title": "event 2B",
+					"outcomes": [4,5,6]
+				}
+			]
+		},
+		{
+			"id": 1,
+			"pos": 1,
+			"title": "sport A",
+			"events": [
+				{
+					"id": 81,
+					"pos": 2,
+					"title": "event 1A",
+					"outcomes": [1,2,3]
+				},
+				{
+					"id": 82,
+					"pos": 1,
+					"title": "event 1B",
+					"outcomes": [4,5,6]
+				}
+			]
+		}
+	]
+}
