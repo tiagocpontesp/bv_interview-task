@@ -1,0 +1,16 @@
+{
+	"description": ".",
+	"repository": ".",
+	"dependencies": {
+		"coffee-script": "*",
+		"mocha": "*",
+		"nock": "*",
+		"superagent": "*",
+		"express": "*",
+		"lodash": "*"
+	},
+	"scripts": {
+		"test": "node_modules/.bin/mocha test.coffee --compilers coffee:coffee-script/register",
+		"start": "node_modules/.bin/coffee main.coffee"
+	}
+}
