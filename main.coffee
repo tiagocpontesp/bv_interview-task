@@ -39,7 +39,8 @@ app.get '/sports', (req,res)->
 
 app.get '/sports/:id', (req,res)->
 	sport = _.find(req.cache.sports, id:+req.param('id'))
-	result = _.map sport?.events, (e)->
+	ordered_events = _.sortBy sport?.events, 'pos'
+	result = _.map ordered_events, (e)->
 		id: e.id
 		title: e.title
 	res.json result
